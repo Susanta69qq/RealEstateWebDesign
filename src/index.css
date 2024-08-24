@@ -1,0 +1,177 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  scroll-padding-top: 2rem;
+}
+
+.email-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 5px;
+  width: 100%;
+  height: 2px;
+  background-color: black;
+  transform: scaleX(0);
+  transform-origin: left center;
+  transition: transform 0.3s ease;
+}
+
+.email-link:hover::after {
+  transform: scaleX(1);
+}
+
+.arrow-icon {
+  display: inline-block;
+  transition: transform 0.2s ease;
+}
+
+.email-link:hover .arrow-icon {
+  transform: rotate(405deg);
+}
+
+.social-icons {
+  transition: transform 0.3s ease;
+}
+
+.social-icons:hover {
+  transform: scale(1.2);
+}
+
+.movingAnimation img {
+  width: 10vw;
+  flex-shrink: 0; /* Prevents shrinking */
+}
+
+/* Animation to move images */
+@keyframes moveImages {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.movingAnimation-wrapper {
+  animation: moveImages 20s linear infinite;
+}
+
+.container:hover{
+  background-color: black;
+}
+
+.container:hover .asterisk{
+  transform: rotate(360deg);
+}
+
+.transition-transform {
+  transition: transform 1s ease-in-out;
+}
+
+.links:hover .linkHead{
+  color: #B28A68;
+}
+
+.links:hover .linkArrow{
+  color: #fff
+}
+
+.linkArrow{
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.links:hover .linkArrow{
+  transform: rotate(405deg);
+}
+
+.circlePattern:hover{
+  background-color: black;
+}
+
+.arrow{
+  display: inline-block;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.circlePattern:hover .arrow{
+  transform: rotate(405deg);
+  color: #B28A68;
+}
+
+
+.circlePattern:hover .smallCircle{
+  background-color: #C29671;
+  z-index: -1;
+}
+
+.grid:hover{
+  background-color: black;
+  transition: all ease-in 0.2s;
+  transform: translateY(-20px);
+}
+
+.rotate{
+  transition: transform 1.5s ease;
+}
+
+.grid:hover .rotate{
+  transform: rotate(360deg);
+}
+
+.contact{
+  transition: all ease-in 0.2s;
+}
+
+.contact:hover .contactLink{
+  color: #C29671;
+}
+
+.contactIcon{
+  display: inline-block;
+  transition: all ease-in 0.2s;
+}
+
+.contact:hover .contactIcon{
+  color: #FFFBF9;
+  transform: rotate(405deg);
+}
+
+.links:hover .link{
+  color: #B28A68;
+}
+
+.linkArrows{
+  display: inline-block;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.links:hover .linkArrows{
+  color: #fff;
+  transform: rotate(405deg);
+}
+
+.question:hover {
+  color: #C29671
+}
+
+.sendButton:hover{
+  background-color: #B28A68;
+  border-color: #B28A68;
+}
+
+.sendArrow{
+  display: inline-block;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.sendButton:hover .sendArrow{
+  transform: rotate(405deg);
+}
