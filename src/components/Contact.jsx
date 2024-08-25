@@ -50,7 +50,7 @@ function Contact() {
   }, []);
 
   return (
-    <div className="w-full min-h-screen bg-[#151515]  pt-[7vw] relative">
+    <div className="w-full min-h-screen bg-[#151515]  pt-[7vw] relative overflow-hidden">
       <div
         ref={headingRef}
         className="heading flex flex-col justify-center gap-6 text-center"
@@ -146,9 +146,9 @@ function Contact() {
               <p className="text-[1vw] text-[#FFFBF9] tracking-wider">
                 SEND US AN EMAIL
               </p>
-              <a className="text-[1vw] text-[#FFFBF9] tracking-wider">
+              <a className="socialLinks text-[1vw] text-[#FFFBF9] tracking-wider flex items-center">
                 HELLO@STUDIOLUXRE.COM{" "}
-                <span className="ml-2">
+                <span className="socialArrows text-[#C29671] text-[1.4vw] ml-2">
                   <i class="ri-arrow-right-up-line"></i>
                 </span>
               </a>
@@ -186,9 +186,9 @@ function Contact() {
               <p className="text-[1vw] text-[#FFFBF9] tracking-wider">
                 GIVE US A CALL
               </p>
-              <a className="text-[1vw] text-[#FFFBF9] tracking-wider">
+              <a className="socialLinks text-[1vw] text-[#FFFBF9] tracking-wider flex items-center">
                 (778) 200-8220
-                <span className="ml-2">
+                <span className="socialArrows text-[#C29671] text-[1.4vw] ml-2">
                   <i class="ri-arrow-right-up-line"></i>
                 </span>
               </a>
@@ -225,9 +225,9 @@ function Contact() {
               <p className="text-[1vw] text-[#FFFBF9] tracking-wider">
                 STUDIOLUX IS BASED IN
               </p>
-              <a className="text-[1vw] text-[#FFFBF9] tracking-wider">
+              <a className="socialLinks text-[1vw] text-[#FFFBF9] tracking-wider flex items-center">
                 VICTORIA, BC
-                <span className="ml-2">
+                <span className="socialArrows text-[#C29671] text-[1.4vw] ml-2">
                   <i class="ri-arrow-right-up-line"></i>
                 </span>
               </a>
@@ -285,9 +285,9 @@ function Contact() {
       </div>
 
       <div className="footer">
-        <div className="flex gap-[2vw] overflow-hidden">
-          <div className="flex">
-            <h1 className="text-[#FEFAF8] text-[8vw]">StudioLux </h1>
+        <div className="movingTextContainer flex gap-[4vw] overflow-hidden absolute left-[-13%] top-[77%]">
+          <div className="movingText flex">
+            <h1 className="text-[#FEFAF8] text-[9vw] tracking-tighter">StudioLux </h1>
             <span className="mt-12">
               <svg
                 width="35px"
@@ -313,8 +313,8 @@ function Contact() {
               </svg>
             </span>
           </div>
-          <div className="flex">
-            <h1 className="text-[#FEFAF8] text-[8vw]">StudioLux </h1>
+          <div className="movingText flex">
+            <h1 className="text-[#FEFAF8] text-[9vw] tracking-tighter">StudioLux </h1>
             <span className="mt-12">
               <svg
                 width="35px"
@@ -340,8 +340,62 @@ function Contact() {
               </svg>
             </span>
           </div>
-          <div className="flex">
-            <h1 className="text-[#FEFAF8] text-[8vw]">StudioLux </h1>
+          <div className="movingText flex">
+            <h1 className="text-[#FEFAF8] text-[9vw] tracking-tighter">StudioLux </h1>
+            <span className="mt-12">
+              <svg
+                width="35px"
+                height="35px"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                stroke="#FEFAF8"
+              >
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g
+                  id="SVGRepo_tracerCarrier"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></g>
+                <g id="SVGRepo_iconCarrier">
+                  {" "}
+                  <path
+                    d="M10.5 2.5C10.5 2.22386 10.2761 2 10 2C9.72386 2 9.5 2.22386 9.5 2.5V8.79294L5.05016 4.3431C4.8549 4.14784 4.53832 4.14784 4.34306 4.3431C4.14779 4.53836 4.14779 4.85495 4.34306 5.05021L8.79285 9.5H2.5C2.22386 9.5 2 9.72386 2 10C2 10.2761 2.22386 10.5 2.5 10.5H8.79294L4.34322 14.9497C4.14796 15.145 4.14796 15.4616 4.34322 15.6568C4.53849 15.8521 4.85507 15.8521 5.05033 15.6568L9.5 11.2072V17.5C9.5 17.7761 9.72386 18 10 18C10.2761 18 10.5 17.7761 10.5 17.5V11.2072L14.9497 15.6568C15.1449 15.8521 15.4615 15.8521 15.6568 15.6568C15.852 15.4615 15.852 15.145 15.6568 14.9497L11.2071 10.5H17.5C17.7761 10.5 18 10.2761 18 10C18 9.72386 17.7761 9.5 17.5 9.5H11.2072L15.6569 5.05022C15.8522 4.85496 15.8522 4.53838 15.6569 4.34311C15.4617 4.14785 15.1451 4.14785 14.9498 4.34311L10.5 8.79294V2.5Z"
+                    fill="#212121"
+                  ></path>{" "}
+                </g>
+              </svg>
+            </span>
+          </div>
+          <div className="movingText flex">
+            <h1 className="text-[#FEFAF8] text-[9vw] tracking-tighter">StudioLux </h1>
+            <span className="mt-12">
+              <svg
+                width="35px"
+                height="35px"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                stroke="#FEFAF8"
+              >
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g
+                  id="SVGRepo_tracerCarrier"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></g>
+                <g id="SVGRepo_iconCarrier">
+                  {" "}
+                  <path
+                    d="M10.5 2.5C10.5 2.22386 10.2761 2 10 2C9.72386 2 9.5 2.22386 9.5 2.5V8.79294L5.05016 4.3431C4.8549 4.14784 4.53832 4.14784 4.34306 4.3431C4.14779 4.53836 4.14779 4.85495 4.34306 5.05021L8.79285 9.5H2.5C2.22386 9.5 2 9.72386 2 10C2 10.2761 2.22386 10.5 2.5 10.5H8.79294L4.34322 14.9497C4.14796 15.145 4.14796 15.4616 4.34322 15.6568C4.53849 15.8521 4.85507 15.8521 5.05033 15.6568L9.5 11.2072V17.5C9.5 17.7761 9.72386 18 10 18C10.2761 18 10.5 17.7761 10.5 17.5V11.2072L14.9497 15.6568C15.1449 15.8521 15.4615 15.8521 15.6568 15.6568C15.852 15.4615 15.852 15.145 15.6568 14.9497L11.2071 10.5H17.5C17.7761 10.5 18 10.2761 18 10C18 9.72386 17.7761 9.5 17.5 9.5H11.2072L15.6569 5.05022C15.8522 4.85496 15.8522 4.53838 15.6569 4.34311C15.4617 4.14785 15.1451 4.14785 14.9498 4.34311L10.5 8.79294V2.5Z"
+                    fill="#212121"
+                  ></path>{" "}
+                </g>
+              </svg>
+            </span>
+          </div>
+          <div className="movingText flex">
+            <h1 className="text-[#FEFAF8] text-[9vw] tracking-tighter">StudioLux </h1>
             <span className="mt-12">
               <svg
                 width="35px"
@@ -369,7 +423,7 @@ function Contact() {
           </div>
         </div>
       </div>
-      <div className="px-[3vw]">
+      <div className="px-[3vw] mt-[17vw]">
         <hr />
       </div>
       <div className="px-[3vw] text-[#FEFAF8] mt-[3vw] flex gap-12">

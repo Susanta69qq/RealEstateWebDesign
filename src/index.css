@@ -175,3 +175,34 @@
 .sendButton:hover .sendArrow{
   transform: rotate(405deg);
 }
+
+@keyframes moveTexts {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.movingTextContainer{
+  animation: moveTexts 20s linear infinite;
+}
+
+.movingText{
+  flex: 1 0 10%;
+}
+
+.socialLinks:hover{
+  color: #C29671
+}
+
+.socialArrows{
+  display: inline-block;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.socialLinks:hover .socialArrows{
+  color: #FFFBF9;
+  transform: rotate(405deg);
+}
