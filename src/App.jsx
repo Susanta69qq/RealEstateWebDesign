@@ -1,12 +1,13 @@
-import Branding from "./components/Branding";
-import Contact from "./components/Contact";
+
 import LandingPage from "./components/LandingPage";
-import Packages from "./components/Packages";
-import Questions from "./components/Questions";
 import SecondPage from "./components/SecondPage";
-import Services from "./components/Services";
 import ThirdPage from "./components/ThirdPage";
+import Services from "./components/Services";
 import Work from "./components/Work";
+import Packages from "./components/Packages";
+import Branding from "./components/Branding";
+import Questions from "./components/Questions";
+import Contact from "./components/Contact";
 
 function App() {
   return (
