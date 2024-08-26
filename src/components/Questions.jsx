@@ -34,10 +34,10 @@ function Questions() {
   };
 
   return (
-    <div className="w-full min-h-screen bg-[#151515] px-[3vw] pt-[7vw]">
-      <div className="questionContainer w-full h-full bg-[#232325] rounded-[4vw] rounded-tr-none px-[6.5vw] py-[5vw] flex flex-row gap-[15vw]">
+    <div className="w-full bg-[#151515] px-[3vw] pt-[7vw]">
+      <div className="questionContainer w-full h-full bg-[#232325] rounded-[4vw] rounded-tr-none px-[6.5vw] py-[5vw] flex flex-row max-sm:flex-col gap-[15vw]">
         <div className="left">
-          <div className="text-white w-[8vw] h-[3vw] border-2 border-[#C29671] rounded-3xl flex items-center justify-center gap-2 px-3">
+          <div className="text-white w-[8vw] max-sm:w-[18vw] h-[3vw] max-sm:h-[7vw] border-2 border-[#C29671] rounded-3xl flex items-center justify-center gap-2 px-3">
             <svg
               width="18px"
               height="18px"
@@ -59,11 +59,11 @@ function Questions() {
                 ></path>
               </g>
             </svg>
-            <h3 className="font-semibold text-[18px]">FAQS</h3>
+            <h3 className="font-semibold text-[18px] max-sm:text-[3vw]">FAQS</h3>
           </div>
           <div
             ref={textRef}
-            className="text-white text-[5.5vw] leading-[5.5vw] tracking-tight mt-4"
+            className="text-white text-[5.5vw] max-sm:text-[12vw] leading-[5.5vw] max-sm:leading-[12vw] tracking-tight mt-4"
           >
             <h1>
               {"Still have".split("").map((letter, index) => (
@@ -124,10 +124,10 @@ function Questions() {
                   onClick={() => toggleFAQ(index)}
                   className="flex justify-between items-center cursor-pointer"
                 >
-                  <div className="question w-[40vw] flex items-center justify-between">
-                    <h4 className="text-[1.1vw]">{faq.question}</h4>
+                  <div className="question w-[40vw] max-sm:w-[80vw] flex items-center justify-between">
+                    <h4 className="text-[1.1vw] max-sm:text-[3.5vw]">{faq.question}</h4>
 
-                    <div className="text-[2vw] text-[#C29671]">
+                    <div className="text-[2vw] max-sm:text-[5vw] text-[#C29671]">
                       {openIndex === index ? (
                         <i className="ri-arrow-up-s-line"></i>
                       ) : (
@@ -138,7 +138,7 @@ function Questions() {
                 </a>
               </div>
               {openIndex === index && (
-                <p className="text-[1.1vw] leading-[1.5vw]">{faq.answer}</p>
+                <p className="text-[1.1vw] max-sm:text-[3.5vw] leading-[1.5vw] max-sm:leading-[4vw] max-sm:font-light max-sm:tracking-wider">{faq.answer}</p>
               )}
             </div>
           ))}

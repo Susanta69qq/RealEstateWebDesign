@@ -50,28 +50,28 @@ function Contact() {
   }, []);
 
   return (
-    <div className="w-full min-h-screen bg-[#151515]  pt-[7vw] relative overflow-hidden">
+    <div className="w-full min-h-screen max-sm:min-h-[200vh] bg-[#151515]  pt-[7vw] relative overflow-hidden">
       <div
         ref={headingRef}
         className="heading flex flex-col justify-center gap-6 text-center"
       >
-        <h3 className="brand text-[#FFFBF9] text-[2.5vw] font-semibold">
+        <h3 className="brand text-[#FFFBF9] text-[2.5vw] max-sm:text-[10vw] font-semibold">
           Sotheby's
         </h3>
         <div className="texts">
-          <h1 className="text-[#FFFBF9] text-[3vw] leading-[3vw]">
+          <h1 className="text-[#FFFBF9] text-[3vw] max-sm:text-[9vw] leading-[3vw] max-sm:leading-[9vw] max-sm:px-[5vw]">
             "This has been a huge wake up call. StudioLux captures your leads,
             <br />
             the ones who are just sitting there"
           </h1>
           <div className="mt-10">
-            <p className="text-[#C29671] text-[1vw]">WILLI BARONET</p>
-            <p className="text-[#FFFBF9] text-[0.9vw]">REALTOR®</p>
+            <p className="text-[#C29671] text-[1vw] max-sm:text-[3.5vw]">WILLI BARONET</p>
+            <p className="text-[#FFFBF9] text-[0.9vw] max-sm:text-[3.5vw]">REALTOR®</p>
           </div>
         </div>
       </div>
-      <div className="px-[3vw]">
-        <div className="text-white w-[14vw] h-[3vw] border-2 border-[#C29671] rounded-3xl flex items-center justify-center gap-2 px-3">
+      <div className="px-[3vw] max-sm:mt-[12vw]">
+        <div className="text-white w-[14vw] max-sm:w-[37vw] h-[3vw] max-sm:h-[9vw] border-2 border-[#C29671] rounded-3xl flex items-center justify-center gap-2 px-3">
           <svg
             width="18px"
             height="18px"
@@ -94,12 +94,12 @@ function Contact() {
               ></path>{" "}
             </g>
           </svg>
-          <h3 className="font-semibold text-[18px]">GET IN TOUCH</h3>
+          <h3 className="font-semibold text-[18px] max-sm:text-[3vw]">GET IN TOUCH</h3>
         </div>
         <div>
           <h1
             ref={hiRef}
-            className="text-[#FFFBF9] text-[5.5vw] tracking-tighter mb-2"
+            className="text-[#FFFBF9] text-[5.5vw] max-sm:text-[14.5vw] max-sm:leading-[14.5vw] max-sm:mt-[2vw] tracking-tighter mb-2"
           >
             {" Don't be shy, ".split("").map((letter, index) => (
               <span key={index} className="letter">
@@ -112,14 +112,14 @@ function Contact() {
               </span>
             ))}
           </h1>
-          <p className="text-[#FFFBF9] text-[1.2vw]">
+          <p className="text-[#FFFBF9] text-[1.2vw] max-sm:text-[3vw] max-sm:mt-[7vw]">
             WE’D LOVE TO HEAR FROM YOU! SEND US YOUR REQUESTS OR GIVE US A CALL
             TO DISCUSS YOUR NEXT PROJECT.
           </p>
         </div>
       </div>
-      <div className="mt-[7vw] px-[8vw] flex justify-between items-center mb-[7vw]">
-        <div className="left">
+      <div className="mt-[7vw] px-[8vw] max-sm:px-[3vw] flex max-sm:flex-col justify-between items-center mb-[7vw]">
+        <div className="left max-sm:mb-[7vw]">
           <div className="flex gap-6 items-center mb-6">
             <svg
               preserveAspectRatio="xMidYMid meet"
@@ -140,15 +140,15 @@ function Contact() {
               </g>
             </svg>
             <div className="flex flex-col gap-[0.1vw]">
-              <h1 className="text-[3.5vw] text-[#FFFBF9] tracking-tighter">
+              <h1 className="text-[3.5vw] max-sm:text-[12vw] text-[#FFFBF9] tracking-tighter">
                 Email
               </h1>
-              <p className="text-[1vw] text-[#FFFBF9] tracking-wider">
+              <p className="text-[1vw] max-sm:text-[3vw] text-[#FFFBF9] tracking-wider">
                 SEND US AN EMAIL
               </p>
-              <a className="socialLinks text-[1vw] text-[#FFFBF9] tracking-wider flex items-center">
+              <a className="socialLinks text-[1vw] max-sm:text-[3vw] text-[#FFFBF9] tracking-wider flex items-center max-sm:items-center">
                 HELLO@STUDIOLUXRE.COM{" "}
-                <span className="socialArrows text-[#C29671] text-[1.4vw] ml-2">
+                <span className="socialArrows text-[#C29671] text-[1.4vw] max-sm:text-[3.5vw] ml-2">
                   <i class="ri-arrow-right-up-line"></i>
                 </span>
               </a>
@@ -180,15 +180,15 @@ function Contact() {
             </svg>
 
             <div className="flex flex-col gap-[0.1vw]">
-              <h1 className="text-[3.5vw] text-[#FFFBF9] tracking-tighter">
+              <h1 className="text-[3.5vw] max-sm:text-[12vw] text-[#FFFBF9] tracking-tighter">
                 Phone
               </h1>
-              <p className="text-[1vw] text-[#FFFBF9] tracking-wider">
+              <p className="text-[1vw] max-sm:text-[3vw] text-[#FFFBF9] tracking-wider">
                 GIVE US A CALL
               </p>
-              <a className="socialLinks text-[1vw] text-[#FFFBF9] tracking-wider flex items-center">
+              <a className="socialLinks text-[1vw] max-sm:text-[3vw] text-[#FFFBF9] tracking-wider flex items-center max-sm:items-center">
                 (778) 200-8220
-                <span className="socialArrows text-[#C29671] text-[1.4vw] ml-2">
+                <span className="socialArrows text-[#C29671] text-[1.4vw] max-sm:text-[3.5vw] ml-2">
                   <i class="ri-arrow-right-up-line"></i>
                 </span>
               </a>
@@ -219,15 +219,15 @@ function Contact() {
               </g>
             </svg>
             <div className="flex flex-col gap-[0.1vw]">
-              <h1 className="text-[3.5vw] text-[#FFFBF9] tracking-tighter">
+              <h1 className="text-[3.5vw] max-sm:text-[12vw] text-[#FFFBF9] tracking-tighter">
                 Address
               </h1>
-              <p className="text-[1vw] text-[#FFFBF9] tracking-wider">
+              <p className="text-[1vw] max-sm:text-[3vw] text-[#FFFBF9] tracking-wider">
                 STUDIOLUX IS BASED IN
               </p>
-              <a className="socialLinks text-[1vw] text-[#FFFBF9] tracking-wider flex items-center">
+              <a className="socialLinks text-[1vw] max-sm:text-[3vw] text-[#FFFBF9] tracking-wider flex items-center max-sm:items-center">
                 VICTORIA, BC
-                <span className="socialArrows text-[#C29671] text-[1.4vw] ml-2">
+                <span className="socialArrows text-[#C29671] text-[1.4vw] max-sm:text-[3.5vw] ml-2">
                   <i class="ri-arrow-right-up-line"></i>
                 </span>
               </a>
@@ -235,27 +235,27 @@ function Contact() {
           </div>
         </div>
         <div className="right">
-          <div className="bg-[#FFFBF9] px-6 py-6 rounded-[2vw] w-[36vw]">
-            <div className="flex gap-4">
+          <div className="bg-[#FFFBF9] px-6 max-sm:px-4 py-6 rounded-[2vw] max-sm:rounded-[8vw] w-[36vw] max-sm:w-[90vw]">
+            <div className="flex max-sm:flex-col gap-4">
               <div>
-                <h5 className="text-[1vw] font-semibold mb-2">NAME</h5>
+                <h5 className="text-[1vw] max-sm:text-[3vw] font-semibold mb-2">NAME</h5>
                 <input
-                  className="bg-[#232325] rounded-lg py-2 px-4 text-[#FFFBF9]"
+                  className="bg-[#232325] max-sm:w-full rounded-lg py-2 px-4 text-[#FFFBF9]"
                   placeholder=""
                   type="text"
                 />
               </div>
               <div>
-                <h5 className="text-[1vw] font-semibold mb-2">PHONE</h5>
+                <h5 className="text-[1vw] max-sm:text-[3vw] font-semibold mb-2">PHONE</h5>
                 <input
-                  className="bg-[#232325] rounded-lg py-2 mb-4 px-4 text-[#FFFBF9]"
+                  className="bg-[#232325] max-sm:w-full rounded-lg py-2 mb-4 px-4 text-[#FFFBF9]"
                   placeholder=""
                   type="text"
                 />
               </div>
             </div>
             <div>
-              <h5 className="text-[1vw] font-semibold mb-2">EMAIL</h5>
+              <h5 className="text-[1vw] max-sm:text-[3vw] font-semibold mb-2">EMAIL</h5>
               <input
                 className="bg-[#232325] w-full rounded-lg py-2 mb-4 px-2 text-[#FFFBF9]"
                 placeholder=""
@@ -263,15 +263,15 @@ function Contact() {
               />
             </div>
             <div>
-              <h5 className="text-[1vw] font-semibold mb-2">MESSAGE</h5>
+              <h5 className="text-[1vw] max-sm:text-[3vw] font-semibold mb-2">MESSAGE</h5>
               <input
-                className="bg-[#232325] w-full h-[6vw] rounded-lg py-2 px-2 text-[#FFFBF9]"
+                className="bg-[#232325] w-full h-[6vw] max-sm:h-[18vw] rounded-lg py-2 px-2 text-[#FFFBF9]"
                 placeholder=""
                 type="text"
               />
             </div>
             <div className="flex justify-end">
-              <div className="sendButton border-[2px] border-black rounded-3xl flex justify-center px-4 py-[0.5vw] mt-6 w-[17vw]">
+              <div className="sendButton border-[2px] border-black rounded-3xl flex justify-center px-4 py-[0.5vw] mt-6 w-[17vw] max-sm:w-[50vw]">
                 <h2 className="font-semibold">
                   SEND MESSAGE{" "}
                   <span className="sendArrow ml-2">
@@ -285,10 +285,10 @@ function Contact() {
       </div>
 
       <div className="footer">
-        <div className="movingTextContainer flex gap-[4vw] overflow-hidden absolute left-[-13%] top-[77%]">
+        <div className="movingTextContainer flex gap-[4vw] max-sm:gap-[10vw] overflow-hidden absolute left-[-13%] max-sm:top-[89%] top-[77%]">
           <div className="movingText flex">
-            <h1 className="text-[#FEFAF8] text-[9vw] tracking-tighter">StudioLux </h1>
-            <span className="mt-12">
+            <h1 className="text-[#FEFAF8] text-[9vw] max-sm:text-[15vw] tracking-tighter">StudioLux </h1>
+            <span className="mt-12 max-sm:mt-[2vw]">
               <svg
                 width="35px"
                 height="35px"
@@ -296,6 +296,7 @@ function Contact() {
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
                 stroke="#FEFAF8"
+                className="max-sm:w-[15px]"
               >
                 <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                 <g
@@ -314,8 +315,8 @@ function Contact() {
             </span>
           </div>
           <div className="movingText flex">
-            <h1 className="text-[#FEFAF8] text-[9vw] tracking-tighter">StudioLux </h1>
-            <span className="mt-12">
+            <h1 className="text-[#FEFAF8] text-[9vw] max-sm:text-[15vw] tracking-tighter">StudioLux </h1>
+            <span className="mt-12 max-sm:mt-[2vw]">
               <svg
                 width="35px"
                 height="35px"
@@ -323,6 +324,7 @@ function Contact() {
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
                 stroke="#FEFAF8"
+                className="max-sm:w-[15px]"
               >
                 <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                 <g
@@ -341,8 +343,8 @@ function Contact() {
             </span>
           </div>
           <div className="movingText flex">
-            <h1 className="text-[#FEFAF8] text-[9vw] tracking-tighter">StudioLux </h1>
-            <span className="mt-12">
+            <h1 className="text-[#FEFAF8] text-[9vw] max-sm:text-[15vw] tracking-tighter">StudioLux </h1>
+            <span className="mt-12 max-sm:mt-[2vw]">
               <svg
                 width="35px"
                 height="35px"
@@ -350,6 +352,7 @@ function Contact() {
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
                 stroke="#FEFAF8"
+                className="max-sm:w-[15px]"
               >
                 <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                 <g
@@ -368,8 +371,8 @@ function Contact() {
             </span>
           </div>
           <div className="movingText flex">
-            <h1 className="text-[#FEFAF8] text-[9vw] tracking-tighter">StudioLux </h1>
-            <span className="mt-12">
+            <h1 className="text-[#FEFAF8] text-[9vw] max-sm:text-[15vw] tracking-tighter">StudioLux </h1>
+            <span className="mt-12 max-sm:mt-[2vw]">
               <svg
                 width="35px"
                 height="35px"
@@ -377,6 +380,7 @@ function Contact() {
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
                 stroke="#FEFAF8"
+                className="max-sm:w-[15px]"
               >
                 <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                 <g
@@ -395,8 +399,8 @@ function Contact() {
             </span>
           </div>
           <div className="movingText flex">
-            <h1 className="text-[#FEFAF8] text-[9vw] tracking-tighter">StudioLux </h1>
-            <span className="mt-12">
+            <h1 className="text-[#FEFAF8] text-[9vw] max-sm:text-[15vw] tracking-tighter">StudioLux </h1>
+            <span className="mt-12 max-sm:mt-[2vw]">
               <svg
                 width="35px"
                 height="35px"
@@ -404,6 +408,7 @@ function Contact() {
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
                 stroke="#FEFAF8"
+                className="max-sm:w-[15px]"
               >
                 <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                 <g
@@ -423,12 +428,12 @@ function Contact() {
           </div>
         </div>
       </div>
-      <div className="px-[3vw] mt-[17vw]">
+      <div className="px-[3vw] mt-[17vw] max-sm:mt-[32vw]">
         <hr />
       </div>
-      <div className="px-[3vw] text-[#FEFAF8] mt-[3vw] flex gap-12">
-            <p className="text-[1vw]">© 2024 - StudioLux by Rocket Web Labs. All rights reserved.</p>
-            <p className="text-[1vw] mb-[4vw]">Privacy Policy</p>
+      <div className="px-[3vw] text-[#FEFAF8] mt-[3vw] flex max-sm:flex-col gap-12 max-sm:gap-[2vw]">
+            <p className="text-[1vw] max-sm:text-[3.5vw]">© 2024 - StudioLux by Rocket Web Labs. All rights reserved.</p>
+            <p className="text-[1vw] max-sm:text-[3.5vw] mb-[4vw]">Privacy Policy</p>
       </div>
     </div>
 

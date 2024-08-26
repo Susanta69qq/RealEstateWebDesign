@@ -1,85 +1,85 @@
 function SecondPage() {
   return (
     <div className="w-full min-h-screen bg-[#151515]">
-      <div className="movingAnimation pt-[5vw] max-sm:pt-[12vw] flex flex-nowrap gap-[4vw] overflow-hidden whitespace-nowrap">
+      <div className="movingAnimation pt-[5vw] max-sm:pt-[12vw] flex gap-[4vw] overflow-hidden">
         <div className="movingAnimation-wrapper flex gap-[4vw] max-sm:gap-[15vw] max-sm:mb-[5vw]">
           <img
-            className="w-[10vw] max-sm:w-[25vw]"
+            className="w-[10vw] max-sm:!w-[25vw]"
             src="/images/image1.webp"
             alt=""
           />
           <img
-            className="w-[10vw] max-sm:w-[25vw]"
+            className="w-[10vw] max-sm:!w-[25vw]"
             src="/images/image2.webp"
             alt=""
           />
           <img
-            className="w-[10vw] max-sm:w-[25vw]"
+            className="w-[10vw] max-sm:!w-[25vw]"
             src="/images/image3.webp"
             alt=""
           />
           <img
-            className="w-[10vw] max-sm:w-[25vw]"
+            className="w-[10vw] max-sm:!w-[25vw]"
             src="/images/image4.webp"
             alt=""
           />
           <img
-            className="w-[10vw] max-sm:w-[25vw]"
+            className="w-[10vw] max-sm:!w-[25vw]"
             src="/images/image5.webp"
             alt=""
           />
           <img
-            className="w-[10vw] max-sm:w-[25vw]"
+            className="w-[10vw] max-sm:!w-[25vw]"
             src="/images/image6.webp"
             alt=""
           />
           <img
-            className="w-[10vw] max-sm:w-[25vw]"
+            className="w-[10vw] max-sm:!w-[25vw]"
             src="/images/image7.webp"
             alt=""
           />
           <img
-            className="w-[10vw] max-sm:w-[25vw]"
+            className="w-[10vw] max-sm:!w-[25vw]"
             src="/images/image8.webp"
             alt=""
           />
           <img
-            className="w-[10vw] max-sm:w-[25vw]"
+            className="w-[10vw] max-sm:!w-[25vw]"
             src="/images/image1.webp"
             alt=""
           />{" "}
           <img
-            className="w-[10vw] max-sm:w-[25vw]"
+            className="w-[10vw] max-sm:!w-[25vw]"
             src="/images/image2.webp"
             alt=""
           />
           <img
-            className="w-[10vw] max-sm:w-[25vw]"
+            className="w-[10vw] max-sm:!w-[25vw]"
             src="/images/image3.webp"
             alt=""
           />
           <img
-            className="w-[10vw] max-sm:w-[25vw]"
+            className="w-[10vw] max-sm:!w-[25vw]"
             src="/images/image4.webp"
             alt=""
           />
           <img
-            className="w-[10vw] max-sm:w-[25vw]"
+            className="w-[10vw] max-sm:!w-[25vw]"
             src="/images/image5.webp"
             alt=""
           />
           <img
-            className="w-[10vw] max-sm:w-[25vw]"
+            className="w-[10vw] max-sm:!w-[25vw]"
             src="/images/image6.webp"
             alt=""
           />
           <img
-            className="w-[10vw] max-sm:w-[25vw]"
+            className="w-[10vw] max-sm:!w-[25vw]"
             src="/images/image7.webp"
             alt=""
           />
           <img
-            className="w-[10vw] max-sm:w-[25vw]"
+            className="w-[10vw] max-sm:!w-[25vw]"
             src="/images/image8.webp"
             alt=""
           />
@@ -87,9 +87,9 @@ function SecondPage() {
       </div>
       <div className="grids mt-[7vw] px-[3vw] flex max-sm:flex-col gap-[1.5vw] max-sm:gap-[4vw]">
         <div className="container w-[30vw] max-sm:w-[95vw] h-[26vw] max-sm:h-[60vw] border-2 border-white rounded-[5vw] rounded-tr-none relative">
-          <div className="asterisk absolute top-[3vw] max-sm:top-[8vw] right-[3vw] max-sm:right-[6vw] transition-transform duration-500 ease-in-out">
+          <div className="asterisk absolute top-[3vw] max-sm:top-[5vw] right-[3vw] max-sm:right-[6vw] transition-transform duration-500 ease-in-out">
             <img
-              className="asteriskLogo w-[6vw]"
+              className="asteriskLogo w-[6vw] max-sm:w-[14vw]"
               src="/images/asterisk.svg"
               alt=""
             />
@@ -113,9 +113,9 @@ function SecondPage() {
           </div>
         </div>
         <div className="container w-[30vw] max-sm:w-[95vw] h-[26vw] max-sm:h-[65vw] border-2 border-white rounded-[5vw] rounded-tr-none relative">
-          <div className="asterisk absolute top-[3vw] max-sm:top-[8vw] right-[3vw] max-sm:right-[6vw] transition-transform duration-500 ease-in-out">
+          <div className="asterisk absolute top-[3vw] max-sm:top-[5vw] right-[3vw] max-sm:right-[6vw] transition-transform duration-500 ease-in-out">
             <img
-              className="asteriskLogo w-[6vw]"
+              className="asteriskLogo w-[6vw] max-sm:w-[14vw]"
               src="/images/asterisk.svg"
               alt=""
             />
@@ -140,8 +140,8 @@ function SecondPage() {
           </div>
         </div>
         <div className="container w-[30vw] max-sm:w-[95vw] h-[26vw] max-sm:h-[65vw] border-2 border-white rounded-[5vw] rounded-tr-none relative">
-          <div className="asterisk absolute top-[3vw] max-sm:top-[8vw] right-[3vw] max-sm:right-[6vw] transition-transform duration-500 ease-in-out">
-            <img className="w-[6vw]" src="/images/asterisk.svg" alt="" />
+          <div className="asterisk absolute top-[3vw] max-sm:top-[5vw] right-[3vw] max-sm:right-[6vw] transition-transform duration-500 ease-in-out">
+            <img className="w-[6vw] max-sm:w-[14vw]" src="/images/asterisk.svg" alt="" />
           </div>
           <div className="px-10 max-sm:px-5 flex flex-col gap-2">
             <h2 className="text-[#C29671] text-[4vw] max-sm:text-[12vw] tracking-tighter mt-[7vw]">

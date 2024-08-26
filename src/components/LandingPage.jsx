@@ -40,7 +40,7 @@ function LandingPage() {
           <h1 className="tracking-tighter max-sm:text-[16.5vw] max-sm:leading-[16.5vw] max-sm:font-[400]">real estate web design</h1>
           <h1 className="tracking-tighter max-sm:text-[0]">& marketing</h1>
         </div>
-        <div className="absolute top-[73%] left-[27%] max-sm:top-[70%] max-sm:left-[0%]">
+        <div className="absolute top-[73%] left-[27%] max-sm:top-[55%] max-sm:left-[0%]">
           <p className="text-center text-[#FFFBF9] font-semibold max-sm:text-[3.85vw] max-sm:leading-[6vw]">
             ELEVATE YOUR BUSINESS WITH STUDIOLUX’S UNPARALLELED LUXURY REAL
             ESTATE <br />
@@ -61,7 +61,7 @@ function LandingPage() {
             <i class="ri-arrow-right-up-line"></i>
           </span>
         </a>
-        <div className="social-icons absolute text-[#FFFBF9] rotate-[180deg] top-[12%] max-sm:top-[8%] left-[0.5%] max-sm:left-[2%] font-medium text-2xl max-sm:text-lg">
+        <div className="social-icons absolute text-[#FFFBF9] rotate-[180deg] top-[12%] max-sm:top-[6%] left-[0.5%] max-sm:left-[2%] font-medium text-2xl max-sm:text-lg">
           <a href="">
             <i class="ri-instagram-line"></i>
           </a>

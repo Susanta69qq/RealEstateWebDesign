@@ -29,10 +29,10 @@ function Branding() {
   }, []);
 
   return (
-    <div className="w-full bg-[#151515] pt-[7vw] px-[3vw]">
-      <div className="relative">
+    <div className="w-full bg-[#151515] pt-[7vw] px-[3vw] max-sm:pb-[7vw]">
+      <div className="relative max-sm:h-[60vh]">
         <img
-          className="w-full rounded-[4vw]"
+          className="w-full max-sm:w-full max-sm:h-full max-sm:object-cover object-cover rounded-[4vw]"
           src="./images/largehouse.webp"
           alt=""
         />
@@ -40,21 +40,21 @@ function Branding() {
 
         <div>
           <div
-            className="circlePattern w-[20vw] h-[20vw] rounded-full border-[2px] border-[#C29671] 
-    absolute top-[25%] left-[17%] z-[20] flex justify-center items-center"
+            className="circlePattern w-[20vw] max-sm:w-[40vw] h-[20vw] max-sm:h-[40vw] rounded-full border-[2px] border-[#C29671] 
+    absolute top-[25%] max-sm:top-[75%] left-[17%] max-sm:left-[55%] z-[20] flex justify-center items-center"
           >
             <div className="w-full h-full bg-black absolute rounded-full opacity-[40%]"></div>
             <a className="text-center text-[#FFFBF9] z-[30]" href="">
               <h2>
                 GET STARTED{" "}
-                <span className="arrow text-[1.5vw] ml-2">
+                <span className="arrow text-[1.5vw] max-sm:text-[4vw] ml-2">
                   <i className="ri-arrow-right-up-line"></i>
                 </span>
               </h2>
             </a>
 
             <div
-              className="smallCircle w-[8vw] h-[8vw] rounded-full border-[2px] border-[#C29671] 
+              className="smallCircle w-[8vw] max-sm:w-[18vw] h-[8vw] max-sm:h-[18vw] rounded-full border-[2px] border-[#C29671] 
     absolute top-0 left-[-5%] z-[10]"
             >
               <div className="w-full h-full bg-black absolute rounded-full opacity-[40%]"></div>
@@ -62,7 +62,7 @@ function Branding() {
           </div>
           <div
             ref={headRef}
-            className="absolute top-[20%] right-[6%] text-[#FFFBF9] text-[6vw] leading-[6vw] tracking-tighter"
+            className="absolute top-[20%] max-sm:top-[5%] right-[6%] max-sm:left-[5%] text-[#FFFBF9] text-[6vw] max-sm:text-[15vw] leading-[6vw] max-sm:leading-[15vw] tracking-tighter"
           >
             <h1 className="first">
               {"StudioLux is".split("").map((letter, index) => (

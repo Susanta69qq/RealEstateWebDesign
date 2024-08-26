@@ -41,7 +41,7 @@ function Work() {
   const newImages = ["./images/image4th.webp", "./images/image5th.webp"];
 
   const Box = ({ heading, largeHeading, context, linkTag, image, arrow }) => (
-    <div className="w-[28vw] max-sm:w-[87vw] h-[43vw] max-sm:h-[100vw] bg-[#151515] rounded-[4vw] transform transition-all 0.25s hover:-translate-y-5">
+    <div className="w-[28vw] max-sm:w-[87vw] h-[43vw] max-sm:h-[100vw] bg-[#151515] rounded-[4vw] max-sm:rounded-[8vw] transform transition-all 0.25s hover:-translate-y-5">
       <h2 className="text-white text-[1vw] max-sm:text-[3.5vw] p-7 max-sm:p-3 max-sm:px-4 font-semibold tracking-wide max-sm:mt-[3vw]">
         {heading}
       </h2>
@@ -98,7 +98,7 @@ function Work() {
   );
 
   return (
-    <div className="w-full min-h-screen max-sm:h-[510vh] bg-[#151515] pt-[7vw] px-[3vw]">
+    <div className="w-full min-h-screen max-sm:h-[345vh] bg-[#151515] pt-[7vw] px-[3vw]">
       <div className="wrapper w-full h-full relative">
         <img
           className="w-full h-full object-cover rounded-[4vw] rounded-tr-none"
@@ -152,7 +152,7 @@ function Work() {
           ))}
         </div>
 
-        <div className="absolute top-[56%] max-sm:top-[65%] left-[4%] flex gap-4 max-sm:flex-col max-sm:gap-[30vw]">
+        <div className="absolute top-[56%] max-sm:top-[64%] left-[4%] flex gap-4 max-sm:flex-col max-sm:gap-[30vw]">
           {newHeadings.map((newHeading, index) => (
             <SecondBox
               key={index}

@@ -39,7 +39,7 @@ function ThirdPage() {
   }, []);
 
   return (
-    <div className="w-full min-h-screen max-sm:h-screen bg-[#151515] pt-[2vw]">
+    <div className="w-full bg-[#151515] pt-[2vw]">
       <div className="p-8 px-[3vw] relative">
         <img
           className="w-full h-full object-cover rounded-[5vw] max-sm:h-[120vw]"

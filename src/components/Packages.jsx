@@ -75,7 +75,7 @@ function Packages() {
   const Box = ({ service }) => {
     return (
       <div className="text-[#FFFBE3]">
-        <ul className="flex items-center text-[1vw] gap-4 mb-2">
+        <ul className="flex items-center text-[1vw] max-sm:text-[3.5vw] gap-4 mb-2">
           <span>
             <svg
               width="13px"
@@ -109,7 +109,7 @@ function Packages() {
 
   return (
     <div className="w-full min-h-screen bg-[#151515] pt-[4vw] px-[3vw]">
-      <div className="text-white w-[16.5vw] h-[3vw] border-2 border-[#C29671] rounded-3xl flex items-center justify-center gap-2 px-3">
+      <div className="text-white w-[16.5vw] max-sm:w-[40vw] h-[3vw] max-sm:h-[8vw] border-2 border-[#C29671] rounded-3xl flex items-center justify-center gap-2 px-3 max-sm:mt-3">
         <svg
           width="18px"
           height="18px"
@@ -132,12 +132,12 @@ function Packages() {
             ></path>{" "}
           </g>
         </svg>
-        <h3 className="font-semibold text-[18px]">OUR LATEST WORK</h3>
+        <h3 className="font-semibold text-[18px] max-sm:text-[10px]">OUR LATEST WORK</h3>
       </div>
 
       <h1
         ref={textRef}
-        className="animateText text-[#FFFBF9] text-[5.5vw] leading-[5.5vw] tracking-tighter mt-4"
+        className="animateText text-[#FFFBF9] text-[5.5vw] max-sm:text-[14vw] leading-[5.5vw] max-sm:leading-[14vw] tracking-tighter mt-4"
       >
         {"Curate the ".split("").map((letter, index) => (
           <span key={index} className="letter">
@@ -159,14 +159,14 @@ function Packages() {
           ))}
         </span>
       </h1>
-      <p className="text-[#FFFBE3] mt-8 text-[1.1vw]">
+      <p className="text-[#FFFBE3] mt-8 text-[1.1vw] max-sm:text-[3vw]">
         WE'RE ALL DIFFERENT - SO WHY ARE ALL PRICING PACKAGES THE SAME? TAILOR
         YOUR EXPERIENCE TO <br />
         FIT YOUR SPECIFIC NEEDS AND ACHIEVE MEANINGFUL RESULTS WITH OUR SERVICE
         ADD ONS.
       </p>
 
-      <div className="w-full bg-[#232325] mt-8 p-[3vw] flex justify-between rounded-[4vw] rounded-tr-none">
+      <div className="w-full bg-[#232325] mt-8 p-[3vw] flex max-sm:flex-col justify-between rounded-[4vw] rounded-tr-none">
         <div>
           {services1.map((service, index) => (
             <Box key={index} service={service} />
