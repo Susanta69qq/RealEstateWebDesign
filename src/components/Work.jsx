@@ -26,7 +26,7 @@ function Work() {
   ];
 
   const arrows = (
-    <span className="text-[1.1vw] font-thin">
+    <span className="text-[1.1vw] max-sm:text-[4vw] font-thin">
       <i className="ri-arrow-right-up-line"></i>
     </span>
   );
@@ -41,17 +41,17 @@ function Work() {
   const newImages = ["./images/image4th.webp", "./images/image5th.webp"];
 
   const Box = ({ heading, largeHeading, context, linkTag, image, arrow }) => (
-    <div className="w-[28vw] h-[43vw] bg-[#151515] rounded-[4vw] transform transition-all 0.25s hover:-translate-y-5">
-      <h2 className="text-white text-[1vw] p-7 font-semibold tracking-wide">
+    <div className="w-[28vw] max-sm:w-[87vw] h-[43vw] max-sm:h-[100vw] bg-[#151515] rounded-[4vw] transform transition-all 0.25s hover:-translate-y-5">
+      <h2 className="text-white text-[1vw] max-sm:text-[3.5vw] p-7 max-sm:p-3 max-sm:px-4 font-semibold tracking-wide max-sm:mt-[3vw]">
         {heading}
       </h2>
-      <h3 className="text-[#C29671] text-[2.8vw] leading-[2.8vw] italic px-8 font-semibold tracking-wide">
+      <h3 className="text-[#C29671] text-[2.8vw] max-sm:text-[8vw] leading-[2.8vw] max-sm:leading-[8vw] italic px-8 max-sm:px-4 font-semibold tracking-wide">
         {largeHeading}
       </h3>
-      <p className="text-white text-[1vw] px-8 font-normal tracking-wide mt-6">
+      <p className="text-white text-[1vw] max-sm:text-[3.5vw] px-8 max-sm:px-4 font-normal tracking-wide mt-6">
         {context}
       </p>
-      <div className="links text-white text-[1vw] px-8 font-semibold tracking-wide mt-6">
+      <div className="links text-white text-[1vw] max-sm:text-[3.5vw] px-8 max-sm:px-4 font-semibold tracking-wide mt-6">
         <a className="link">
           {linkTag} &nbsp;&nbsp;
           <span className="linkArrows text-[#B28A68]">{arrow}</span>{" "}
@@ -73,17 +73,17 @@ function Work() {
     image,
     arrow,
   }) => (
-    <div className="w-[43vw] bg-[#151515] rounded-[4vw] transform transition-all 0.25s hover:-translate-y-7">
-      <h2 className="text-white text-[1vw] p-7 font-semibold tracking-wide">
+    <div className="w-[43vw] max-sm:w-[87vw] max-sm:h-[100vw] bg-[#151515] rounded-[4vw] transform transition-all 0.25s hover:-translate-y-7">
+      <h2 className="text-white text-[1vw] max-sm:text-[3.5vw] p-7 max-sm:p-3 max-sm:px-4 font-semibold tracking-wide max-sm:mt-[3vw]">
         {heading}
       </h2>
-      <h3 className="text-[#C29671] text-[2.8vw] leading-[2.8vw] italic px-8 font-semibold tracking-wide">
+      <h3 className="text-[#C29671] text-[2.8vw] max-sm:text-[8vw] leading-[2.8vw] max-sm:leading-[8vw] italic px-8 max-sm:px-4 font-semibold tracking-wide">
         {largeHeading}
       </h3>
-      <p className="text-white text-[1vw] px-8 font-normal tracking-wide mt-6">
+      <p className="text-white text-[1vw] max-sm:text-[3.5vw] px-8 max-sm:px-4 font-normal tracking-wide mt-6">
         {context}
       </p>
-      <div className="links text-white text-[1vw] px-8 font-semibold tracking-wide mt-6">
+      <div className="links text-white text-[1vw] max-sm:text-[3.5vw] px-8 max-sm:px-4 font-semibold tracking-wide mt-6">
         <a className="link">
           {linkTag} &nbsp;&nbsp;
           <span className="linkArrows text-[#B28A68]">{arrow}</span>{" "}
@@ -98,14 +98,14 @@ function Work() {
   );
 
   return (
-    <div className="w-full min-h-screen bg-[#151515] pt-[7vw] px-[3vw]">
+    <div className="w-full min-h-screen max-sm:h-[510vh] bg-[#151515] pt-[7vw] px-[3vw]">
       <div className="wrapper w-full h-full relative">
         <img
           className="w-full h-full object-cover rounded-[4vw] rounded-tr-none"
           src="./images/AS.webp"
           alt=""
         />
-        <div className="absolute top-[3%] left-[4%] w-[16.5vw] h-[3vw] border-2 border-black rounded-3xl flex items-center justify-center gap-2 px-3">
+        <div className="absolute top-[3%] max-sm:top-[0.5%] left-[4%] w-[16.5vw] max-sm:w-[40vw] h-[3vw] max-sm:h-[10vw] border-2 border-black rounded-3xl flex items-center justify-center gap-2 px-3">
           <svg
             width="20px"
             height="20px"
@@ -128,17 +128,17 @@ function Work() {
               ></path>{" "}
             </g>
           </svg>
-          <h3 className="font-semibold text-[18px]">OUR LATEST WORK</h3>
+          <h3 className="font-semibold text-[18px] max-sm:text-[10px]">OUR LATEST WORK</h3>
         </div>
 
-        <div className="absolute top-[7%] left-[4%]">
-          <h1 className="animateText text-[5.5vw] leading-[5.5vw] tracking-tighter">
+        <div className="absolute top-[7%] max-sm:top-[2.5%] left-[4%]">
+          <h1 className="animateText text-[5.5vw] max-sm:text-[11vw] leading-[5.5vw] max-sm:leading-[10vw] tracking-tighter">
             Here is some stuff <br />
             we’re pretty proud of
           </h1>
         </div>
 
-        <div className="absolute top-[19%] left-[4%] flex gap-4">
+        <div className="absolute top-[19%] max-sm:top-[7.5%] left-[4%] max-sm:flex-col flex gap-4 max-sm:gap-[40vw]">
           {headings.map((heading, index) => (
             <Box
               key={index}
@@ -152,7 +152,7 @@ function Work() {
           ))}
         </div>
 
-        <div className="absolute top-[56%] left-[4%] flex gap-4">
+        <div className="absolute top-[56%] max-sm:top-[65%] left-[4%] flex gap-4 max-sm:flex-col max-sm:gap-[30vw]">
           {newHeadings.map((newHeading, index) => (
             <SecondBox
               key={index}

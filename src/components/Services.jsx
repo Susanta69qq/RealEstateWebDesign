@@ -37,7 +37,7 @@ function Services() {
   return (
     <div className="w-full min-h-screen bg-[#151515] px-[3vw] pt-[5vw]">
       <div className="w-full h-full bg-[#232325] rounded-[5vw] px-[4vw] py-[4.5vw]">
-        <div className="head w-[13vw] h-[3vw] border-2 border-[#C29671] rounded-3xl flex items-center justify-center gap-2 px-3">
+        <div className="head w-[13vw] max-sm:w-[40vw] h-[3vw] max-sm:h-[10vw] border-2 border-[#C29671] rounded-3xl flex items-center justify-center gap-2 px-3">
           <svg
             width="20px"
             height="20px"
@@ -60,10 +60,10 @@ function Services() {
               ></path>{" "}
             </g>
           </svg>
-          <h2 className="text-[#FFFBF9] font-semibold">OUR SERVICES</h2>
+          <h2 className="text-[#FFFBF9] font-semibold max-sm:text-[3vw]">OUR SERVICES</h2>
         </div>
         <div className="headText">
-        <h1 ref={headerRef} className="header text-[#FFFBF9] text-[5.5vw] tracking-tighter mt-4">
+        <h1 ref={headerRef} className="header text-[#FFFBF9] text-[5.5vw] max-sm:text-[12vw] max-sm:leading-[12vw] tracking-tighter mt-4">
       {"Turning needs into ".split("").map((letter, index) => (
         <span key={index} className="letter">
           {letter}
@@ -77,15 +77,15 @@ function Services() {
         ))}
       </span>
     </h1>
-          <p className="text-[#FFFBF9] text-[1.1vw] mt-4 leading-6 tracking-normal">
+          <p className="text-[#FFFBF9] text-[1.1vw] max-sm:text-[3vw] max-sm:leading-[4vw] mt-4 max-sm:mt-[8vw] leading-6 tracking-normal">
             BREAK AWAY FROM THE OUTDATED, UNINSPIRED DESIGNS THAT PLAGUE THE
             REAL ESTATE MARKET <br />
             AND LEAVE A LASTING IMPRESSION WHILE SETTING YOURSELF APART FROM THE
             COMPETITION.
           </p>
         </div>
-        <div className="grids flex justify-between gap-4 mt-[5vw]">
-          <div className="grid w-[22vw] min-h-[25vw] bg-[#161515] rounded-[4vw] rounded-tr-none px-6 py-8">
+        <div className="grids flex max-sm:flex-col justify-between gap-4 mt-[5vw]">
+          <div className="grid w-[22vw] max-sm:w-[86vw] min-h-[25vw] bg-[#161515] rounded-[4vw] rounded-tr-none px-6 py-8">
             <svg
               className="rotate"
               width="55px"
@@ -109,14 +109,14 @@ function Services() {
                 ></path>{" "}
               </g>
             </svg>
-            <h5 className="text-[#C29671] mt-2 text-[1vw]">STEP 1</h5>
+            <h5 className="text-[#C29671] mt-2 text-[1vw] max-sm:text-[3.5vw]">STEP 1</h5>
             <div className="mt-3">
-              <h2 className="text-[#FFFBF9] text-[2.5vw] tracking-tighter leading-[2.5vw]">
+              <h2 className="text-[#FFFBF9] text-[2.5vw] max-sm:text-[10vw] tracking-tighter leading-[2.5vw] max-sm:leading-[10vw]">
                 Templates & <br /> Custom Designs
               </h2>
             </div>
             <div className="mt-3">
-              <p className="text-[#FFFBF9] text-[1.2vw] leading-[1.5vw] ">
+              <p className="text-[#FFFBF9] text-[1.2vw] max-sm:text-[3vw] leading-[1.5vw] max-sm:leading-[4vw] max-sm:mt-[5vw] ">
                 If you are looking for a more budget friendly option or a more
                 timely integration, we have luxury real estate
                 {showMore1 && (
@@ -136,28 +136,28 @@ function Services() {
                 )}
               </p>
             </div>
-            <div className="mt-3">
+            <div className="mt-3 max-sm:mt-[1vw]">
               <a
                 onClick={() => {
                   setShowMore1(!showMore1);
                 }}
-                className="text-[#C29671] cursor-pointer"
+                className="text-[#C29671] cursor-pointer max-sm:text-[3vw]"
               >
                 {showMore1 ? "SHOW LESS" : "SHOW MORE"}
               </a>
             </div>
             <hr className="mt-4 opacity-10" />
-            <div className="contact mt-4">
+            <div className="contact mt-4 max-sm:mt-2">
               <a className="contactLink text-[#FFFBF9]" href="">
                 GET STARTED{" "}
-                <span className="contactIcon ml-2 text-[#C29671] text-xl">
+                <span className="contactIcon ml-2 text-[#C29671] text-xl max-sm:text-lg">
                   <i class="ri-arrow-right-up-line"></i>
                 </span>
               </a>
             </div>
           </div>
 
-          <div className="grid w-[22vw] min-h-[25vw] bg-[#161515] rounded-[4vw] rounded-tr-none px-6 py-8">
+          <div className="grid w-[22vw] max-sm:w-[86vw] min-h-[25vw] bg-[#161515] rounded-[4vw] rounded-tr-none px-6 py-8">
             <svg
               className="rotate"
               width="55px"
@@ -181,15 +181,15 @@ function Services() {
                 ></path>{" "}
               </g>
             </svg>
-            <h5 className="text-[#C29671] mt-2 text-[1vw]">STEP 2</h5>
+            <h5 className="text-[#C29671] mt-2 text-[1vw] max-sm:text-[3.5vw]">STEP 2</h5>
             <div className="mt-3">
-              <h2 className="text-[#FFFBF9] text-[2.5vw] tracking-tighter leading-[2.5vw]">
+              <h2 className="text-[#FFFBF9] text-[2.5vw] max-sm:text-[10vw] tracking-tighter leading-[2.5vw] max-sm:leading-[10vw]">
                 Add MLS to <br />
                 Your Wix Site
               </h2>
             </div>
-            <div className="mt-3">
-              <p className="text-[#FFFBF9] text-[1.2vw] leading-[1.5vw] ">
+            <div className="mt-3 max-sm:mt-[1vw]">
+              <p className="text-[#FFFBF9] text-[1.2vw] max-sm:text-[3vw] leading-[1.5vw] max-sm:leading-[4vw] max-sm:mt-[5vw] ">
                 Transform your Wix website with expertly integrated MLS
                 listings. Our service seamlessly incorporates MLS
                 {showMore2 && (
@@ -212,23 +212,23 @@ function Services() {
                 onClick={() => {
                   setShowMore2(!showMore2);
                 }}
-                className="text-[#C29671] cursor-pointer"
+                className="text-[#C29671] cursor-pointer max-sm:text-[3vw]"
               >
                 {showMore2 ? "SHOW LESS" : "SHOW MORE"}
               </a>
             </div>
             <hr className="mt-4 opacity-10" />
-            <div className="contact mt-4">
+            <div className="contact mt-4 max-sm:mt-2">
               <a className="contactLink text-[#FFFBF9]" href="">
                 GET STARTED{" "}
-                <span className="contactIcon ml-2 text-[#C29671] text-xl">
+                <span className="contactIcon ml-2 text-[#C29671] text-xl max-sm:text-lg">
                   <i class="ri-arrow-right-up-line"></i>
                 </span>
               </a>
             </div>
           </div>
 
-          <div className="grid w-[22vw] min-h-[25vw] bg-[#161515] rounded-[4vw] rounded-tr-none px-6 py-8">
+          <div className="grid w-[22vw] max-sm:w-[86vw] min-h-[25vw] bg-[#161515] rounded-[4vw] rounded-tr-none px-6 py-8">
             <svg
               className="rotate"
               width="55px"
@@ -252,15 +252,15 @@ function Services() {
                 ></path>{" "}
               </g>
             </svg>
-            <h5 className="text-[#C29671] mt-2 text-[1vw]">STEP 3</h5>
-            <div className="mt-3">
-              <h2 className="text-[#FFFBF9] text-[2.5vw] tracking-tighter leading-[2.5vw]">
+            <h5 className="text-[#C29671] mt-2 text-[1vw] max-sm:text-[3.5vw]">STEP 3</h5>
+            <div className="mt-3 max-sm:mt-[1vw]">
+              <h2 className="text-[#FFFBF9] text-[2.5vw] max-sm:text-[10vw] tracking-tighter leading-[2.5vw] max-sm:leading-[10vw]">
                 Branding & <br />
                 Marketing
               </h2>
             </div>
-            <div className="mt-3">
-              <p className="text-[#FFFBF9] text-[1.2vw] leading-[1.5vw] ">
+            <div className="mt-3 max-sm:mt-[1vw]">
+              <p className="text-[#FFFBF9] text-[1.2vw] max-sm:text-[3vw] leading-[1.5vw] max-sm:leading-[4vw] max-sm:mt-[5vw] ">
                 Our marketing services are designed to amplify the reach and
                 impact of your luxury real estate brand. We combine
                 {showMore3 && (
@@ -282,23 +282,23 @@ function Services() {
                 onClick={() => {
                   setShowMore3(!showMore3);
                 }}
-                className="text-[#C29671] cursor-pointer"
+                className="text-[#C29671] cursor-pointer max-sm:text-[3vw]"
               >
                 {showMore3 ? "SHOW LESS" : "SHOW MORE"}
               </a>
             </div>
             <hr className="mt-4 opacity-10" />
-            <div className="contact mt-4">
+            <div className="contact mt-4 max-sm:mt-2">
               <a className="contactLink text-[#FFFBF9]" href="">
                 GET STARTED{" "}
-                <span className="contactIcon ml-2 text-[#C29671] text-xl">
+                <span className="contactIcon ml-2 text-[#C29671] text-xl max-sm:text-lg">
                   <i class="ri-arrow-right-up-line"></i>
                 </span>
               </a>
             </div>
           </div>
 
-          <div className="grid w-[22vw] min-h-[25vw] bg-[#161515] rounded-[4vw] rounded-tr-none px-6 py-8">
+          <div className="grid w-[22vw] max-sm:w-[86vw] min-h-[25vw] bg-[#161515] rounded-[4vw] rounded-tr-none px-6 py-8">
             <svg
               className="rotate"
               width="55px"
@@ -322,15 +322,15 @@ function Services() {
                 ></path>{" "}
               </g>
             </svg>
-            <h5 className="text-[#C29671] mt-2 text-[1vw]">STEP 4</h5>
-            <div className="mt-3">
-              <h2 className="text-[#FFFBF9] text-[2.5vw] tracking-tighter leading-[2.5vw]">
+            <h5 className="text-[#C29671] mt-2 text-[1vw] max-sm:text-[3.5vw]">STEP 4</h5>
+            <div className="mt-3 max-sm:mt-[1vw]">
+              <h2 className="text-[#FFFBF9] text-[2.5vw] max-sm:text-[10vw] tracking-tighter leading-[2.5vw] max-sm:leading-[10vw]">
                 À La Carte <br />
                 Services
               </h2>
             </div>
-            <div className="mt-3">
-              <p className="text-[#FFFBF9] text-[1.2vw] leading-[1.5vw] ">
+            <div className="mt-3 max-sm:mt-[1vw]">
+              <p className="text-[#FFFBF9] text-[1.2vw] max-sm:text-[3vw] leading-[1.5vw] max-sm:leading-[4vw] max-sm:mt-[5vw]">
                 We offer the flexibility to tailor your luxury real estate
                 marketing and web design needs to your exact
                 {showMore4 && (
@@ -354,16 +354,16 @@ function Services() {
                 onClick={() => {
                   setShowMore4(!showMore4);
                 }}
-                className="text-[#C29671] cursor-pointer"
+                className="text-[#C29671] cursor-pointer max-sm:text-[3vw]"
               >
                 {showMore4 ? "SHOW LESS" : "SHOW MORE"}
               </a>
             </div>
             <hr className=" mt-4 opacity-10" />
-            <div className="contact mt-4">
+            <div className="contact mt-4 max-sm:mt-2">
               <a className="contactLink text-[#FFFBF9]" href="">
                 GET STARTED{" "}
-                <span className="contactIcon ml-2 text-[#C29671] text-xl">
+                <span className="contactIcon ml-2 text-[#C29671] text-xl max-sm:text-lg">
                   <i class="ri-arrow-right-up-line"></i>
                 </span>
               </a>
