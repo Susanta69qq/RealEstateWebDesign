@@ -1,21 +1,33 @@
 import { useEffect, useRef } from "react";
+import { Link, useNavigate } from "react-router-dom";
 import "remixicon/fonts/remixicon.css";
 import gsap from "gsap";
 
 function LandingPage() {
   const centerTextRef = useRef(null);
+  const navigate = useNavigate();
 
   useEffect(() => {
     gsap.fromTo(
       centerTextRef.current,
-      { opacity: 0, },
+      { opacity: 0 },
       {
         opacity: 1,
-        duration: 20,
+        duration: 10,
         stagger: 0.5,
       }
     );
   }, []);
+
+  const handleScroll = () => {
+    navigate("/second");
+    setTimeout(() => {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    }, 1000);
+  };
 
   return (
     <>
@@ -31,16 +43,20 @@ function LandingPage() {
 
       <div className="absolute top-0 left-0 w-full h-full bg-black opacity-20"></div>
       <div ref={centerTextRef} className="centerText">
-        <h3 className="absolute top-[6%] max-sm:top-2 left-[40%] max-sm:left-[27%] text-5xl text-[#FFFBF9] font-[200] tracking-tighter max-sm:font-[400]">
-          Studio<span className="italic">Lux</span>
-          <span>*</span>
-        </h3>
+          <h3 onClick={handleScroll} className="absolute top-[6%] max-sm:top-2 left-[40%] max-sm:left-[27%] text-5xl text-[#FFFBF9] font-[200] tracking-tighter max-sm:font-[400] cursor-pointer">
+            Studio<span className="italic">Lux</span>
+            <span>*</span>
+          </h3>
         <div className="absolute top-[28%] max-sm:top-[18%] left-[20%] max-sm:left-[3%] text-center text-[#FFFBF9] font-normal text-[6.2vw] leading-[6vw] opacity-80">
-          <h1 className="tracking-tighter max-sm:text-[16.5vw] max-sm:leading-[16.5vw] max-sm:font-[400]">Award Winning</h1>
-          <h1 className="tracking-tighter max-sm:text-[16.5vw] max-sm:leading-[16.5vw] max-sm:font-[400]">real estate web design</h1>
+          <h1 className="tracking-tighter max-sm:text-[16.5vw] max-sm:leading-[16.5vw] max-sm:font-[400]">
+            Award Winning
+          </h1>
+          <h1 className="tracking-tighter max-sm:text-[16.5vw] max-sm:leading-[16.5vw] max-sm:font-[400]">
+            real estate web design
+          </h1>
           <h1 className="tracking-tighter max-sm:text-[0]">& marketing</h1>
         </div>
-        <div className="absolute top-[73%] left-[27%] max-sm:top-[55%] max-sm:left-[0%]">
+        <div className="absolute top-[73%] left-[27%] max-sm:top-[60%] max-sm:left-[0%]">
           <p className="text-center text-[#FFFBF9] font-semibold max-sm:text-[3.85vw] max-sm:leading-[6vw]">
             ELEVATE YOUR BUSINESS WITH STUDIOLUX’S UNPARALLELED LUXURY REAL
             ESTATE <br />
